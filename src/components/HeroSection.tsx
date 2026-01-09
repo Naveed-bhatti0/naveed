@@ -21,19 +21,18 @@ const HeroSection = () => {
 
           {/* Name */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up opacity-0 delay-100">
-            <span className="text-foreground">John </span>
-            <span className="gradient-text">Developer</span>
+            <span className="text-foreground">Naveed </span>
+            <span className="gradient-text">Bhatti</span>
           </h1>
 
           {/* Role */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 animate-fade-in-up opacity-0 delay-200">
-            <span className="text-primary font-semibold">Web Developer</span> & Creative Problem Solver
+            <span className="text-primary font-semibold">Web Developer</span> | Frontend & WordPress
           </p>
 
           {/* Tagline */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up opacity-0 delay-300">
-            Crafting beautiful, performant web experiences with modern technologies. 
-            Turning ideas into pixel-perfect, user-friendly digital solutions.
+            Turning ideas into clean and user-friendly web experiences.
           </p>
 
           {/* CTA Buttons */}

@@ -9,14 +9,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Logo */}
           <a href="#" className="text-xl font-bold gradient-text">
-            Portfolio
+            Naveed Bhatti
           </a>
 
           {/* Copyright */}
           <p className="text-muted-foreground text-sm flex items-center gap-1">
-            © {currentYear} John Developer. Made with
+            © 2026 Naveed Bhatti — All Rights Reserved
             <Heart className="text-primary" size={14} fill="currentColor" />
-            and React
           </p>
 
           {/* Back to top */}

@@ -2,14 +2,8 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Send, Github, Linkedin, Twitter } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-
-const contactInfo = [
-  { icon: Mail, label: 'Email', value: 'hello@johndeveloper.com' },
-  { icon: Phone, label: 'Phone', value: '+1 (555) 123-4567' },
-  { icon: MapPin, label: 'Location', value: 'San Francisco, CA' },
-];
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com', label: 'GitHub' },
@@ -54,7 +48,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-24 relative">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <span className="text-primary font-medium text-sm tracking-wider uppercase">
@@ -64,8 +58,7 @@ const ContactSection = () => {
               Let's Work <span className="gradient-text">Together</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind? I'd love to hear about it. Send me a message
-              and let's create something amazing together.
+              Interested in working together or have a project in mind? Feel free to contact me — I'm always open to new opportunities.
             </p>
           </div>
 
@@ -74,27 +67,22 @@ const ContactSection = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-6">
-                  Contact Information
+                  Let's Connect
                 </h3>
-                <div className="space-y-4">
-                  {contactInfo.map((info) => (
-                    <div
-                      key={info.label}
-                      className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300 group"
-                    >
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                        <info.icon className="text-primary" size={20} />
-                      </div>
-                      <div>
-                        <p className="text-sm text-muted-foreground">
-                          {info.label}
-                        </p>
-                        <p className="text-foreground font-medium">
-                          {info.value}
-                        </p>
-                      </div>
+                <div className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300 group">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                      <Mail className="text-primary" size={20} />
                     </div>
-                  ))}
+                    <div>
+                      <p className="text-sm text-muted-foreground">
+                        Email
+                      </p>
+                      <p className="text-foreground font-medium">
+                        naveedbhatti@email.com
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -133,7 +121,7 @@ const ContactSection = () => {
                     id="name"
                     name="name"
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="Your Name"
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -152,7 +140,7 @@ const ContactSection = () => {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="your@email.com"
                     value={formData.email}
                     onChange={handleChange}
                     required

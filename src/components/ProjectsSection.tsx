@@ -1,38 +1,27 @@
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A modern e-commerce solution with cart functionality, payment integration, and admin dashboard.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop',
-    techStack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
     title: 'Portfolio Website',
-    description: 'A beautiful portfolio website for a photographer with gallery, blog, and contact features.',
+    description: 'Modern one-page portfolio with smooth scrolling and fully responsive design.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop',
-    techStack: ['WordPress', 'PHP', 'Custom Theme'],
+    techStack: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: '#',
-    githubUrl: '#',
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates and team features.',
-    image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=500&fit=crop',
-    techStack: ['React', 'TypeScript', 'Firebase'],
+    title: 'Real Estate Website',
+    description: 'Professional real estate site with custom layouts and property listings.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop',
+    techStack: ['WordPress', 'Elementor', 'PHP'],
     liveUrl: '#',
-    githubUrl: '#',
   },
   {
-    title: 'Restaurant Website',
-    description: 'A responsive restaurant website with online ordering, menu management, and reservations.',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=500&fit=crop',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'PHP'],
+    title: 'E-Commerce Theme',
+    description: 'Custom WooCommerce theme with product listings and optimized UI for conversions.',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop',
+    techStack: ['WordPress', 'WooCommerce'],
     liveUrl: '#',
-    githubUrl: '#',
   },
 ];
 
@@ -55,7 +44,7 @@ const ProjectsSection = () => {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={project.title}
@@ -76,13 +65,7 @@ const ProjectsSection = () => {
                     <Button variant="hero" size="sm" asChild>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink size={16} />
-                        Live Demo
-                      </a>
-                    </Button>
-                    <Button variant="glass" size="sm" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github size={16} />
-                        Code
+                        View Project
                       </a>
                     </Button>
                   </div>
@@ -111,13 +94,6 @@ const ProjectsSection = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* View All Button */}
-          <div className="text-center mt-12">
-            <Button variant="heroOutline" size="lg">
-              View All Projects
-            </Button>
           </div>
         </div>
       </div>
