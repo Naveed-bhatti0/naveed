@@ -1,10 +1,10 @@
 const skills = [
-  { name: 'HTML', level: 95, color: 'from-orange-500 to-red-500' },
-  { name: 'CSS', level: 90, color: 'from-blue-500 to-blue-600' },
-  { name: 'JavaScript', level: 85, color: 'from-yellow-400 to-yellow-500' },
-  { name: 'PHP', level: 75, color: 'from-indigo-500 to-purple-500' },
-  { name: 'WordPress', level: 80, color: 'from-blue-600 to-blue-700' },
-  { name: 'React', level: 88, color: 'from-cyan-400 to-blue-500' },
+  { name: 'HTML5', level: 90, color: 'from-orange-500 to-red-500' },
+  { name: 'CSS3', level: 85, color: 'from-blue-500 to-blue-600' },
+  { name: 'JavaScript (ES6+)', level: 75, color: 'from-yellow-400 to-yellow-500' },
+  { name: 'Bootstrap', level: 80, color: 'from-purple-500 to-purple-600' },
+  { name: 'jQuery', level: 70, color: 'from-blue-400 to-blue-500' },
+  { name: 'WordPress', level: 85, color: 'from-blue-600 to-blue-700' },
 ];
 
 const SkillsSection = () => {
@@ -59,7 +59,7 @@ const SkillsSection = () => {
               Other Technologies & Tools
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {['Git', 'Tailwind CSS', 'TypeScript', 'Node.js', 'MySQL', 'REST APIs', 'Figma', 'VS Code'].map(
+              {['PHP', 'MySQL', 'Elementor', 'Custom Themes', 'Basic Plugins', 'React JS (learning)', 'Git', 'VS Code'].map(
                 (tool) => (
                   <span
                     key={tool}

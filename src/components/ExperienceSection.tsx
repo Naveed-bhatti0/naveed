@@ -2,32 +2,25 @@ import { Briefcase, GraduationCap } from 'lucide-react';
 
 const experience = [
   {
-    type: 'work',
-    title: 'Senior Web Developer',
-    organization: 'Tech Solutions Inc.',
-    period: '2022 - Present',
-    description: 'Leading front-end development for enterprise clients, building scalable React applications and mentoring junior developers.',
-  },
-  {
-    type: 'work',
-    title: 'Full Stack Developer',
-    organization: 'Creative Agency',
-    period: '2020 - 2022',
-    description: 'Developed custom WordPress themes and plugins, built e-commerce solutions, and collaborated with design teams.',
-  },
-  {
-    type: 'work',
-    title: 'Junior Web Developer',
-    organization: 'StartUp Hub',
-    period: '2019 - 2020',
-    description: 'Started my career building responsive websites, learning best practices, and working with modern web technologies.',
-  },
-  {
     type: 'education',
-    title: 'Bachelor in Computer Science',
-    organization: 'University of Technology',
-    period: '2015 - 2019',
-    description: 'Focused on software engineering, web development, and computer science fundamentals.',
+    title: 'Intermediate in Computer Science (ICS)',
+    organization: 'First-year University Student',
+    period: 'Present',
+    description: 'Pursuing higher education in Computer Science, building a strong foundation in programming and software development.',
+  },
+  {
+    type: 'work',
+    title: 'Frontend & WordPress Developer',
+    organization: 'Freelance / Self-learning',
+    period: '2023 - Present',
+    description: 'Developing responsive websites, customizing WordPress themes, and building clean user interfaces using modern technologies.',
+  },
+  {
+    type: 'work',
+    title: 'Theme Customization',
+    organization: 'WordPress Projects',
+    period: '2023 - Present',
+    description: 'Customizing WordPress themes for clients, creating responsive layouts, and optimizing websites for better performance.',
   },
 ];
 

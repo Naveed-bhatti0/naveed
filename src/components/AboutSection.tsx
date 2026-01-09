@@ -1,10 +1,10 @@
 import { Code2, Rocket, Users, Zap } from 'lucide-react';
 
 const stats = [
-  { icon: Code2, value: '5+', label: 'Years Experience' },
-  { icon: Rocket, value: '50+', label: 'Projects Completed' },
-  { icon: Users, value: '30+', label: 'Happy Clients' },
-  { icon: Zap, value: '100%', label: 'Client Satisfaction' },
+  { icon: Code2, value: '2+', label: 'Years Learning' },
+  { icon: Rocket, value: '10+', label: 'Projects Built' },
+  { icon: Users, value: '5+', label: 'Happy Clients' },
+  { icon: Zap, value: '100%', label: 'Dedication' },
 ];
 
 const AboutSection = () => {
@@ -21,8 +21,7 @@ const AboutSection = () => {
               Passionate About <span className="gradient-text">Web Development</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              I'm a creative developer who loves turning complex problems into simple, 
-              beautiful, and intuitive designs.
+              Building clean, responsive, and user-friendly digital experiences.
             </p>
           </div>
 
@@ -31,20 +30,13 @@ const AboutSection = () => {
             {/* Left: About Text */}
             <div className="space-y-6">
               <p className="text-muted-foreground leading-relaxed">
-                I'm a passionate web developer with over 5 years of experience creating 
-                modern, responsive, and user-friendly websites. My journey started with 
-                simple HTML pages, and now I build complex web applications using the 
-                latest technologies.
+                Hi, I'm <span className="text-primary font-semibold">Naveed Bhatti</span>, a passionate web developer with a strong focus on creating clean, responsive, and user-friendly websites.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I specialize in front-end development with React, but I'm also comfortable 
-                working with back-end technologies like PHP and WordPress. I believe in 
-                writing clean, maintainable code and creating seamless user experiences.
+                I work with modern web technologies and enjoy building professional websites, portfolios, and dynamic web applications.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, 
-                contributing to open-source projects, or sharing my knowledge through 
-                technical writing and mentoring.
+                I'm always eager to learn new tools, improve my skills, and turn ideas into real digital products.
               </p>
 
               {/* Highlight box */}
