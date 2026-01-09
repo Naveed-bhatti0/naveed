@@ -6,6 +6,7 @@ const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
+  { href: '#cv', label: 'CV' },
   { href: '#experience', label: 'Experience' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -31,7 +32,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="text-xl font-bold gradient-text">
-          Portfolio
+          Naveed Bhatti
         </a>
 
         {/* Desktop Navigation */}
