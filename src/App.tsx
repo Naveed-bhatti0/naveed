@@ -1,15 +1,5 @@
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-// ...
-
 const App = () => {
-  return (
-    <div>
-      <Header />
-      <HeroSection />
-      ...
-    </div>
-  );
+  return <div style={{ color: "red" }}>React is working!</div>;
 };
 
 export default App;
